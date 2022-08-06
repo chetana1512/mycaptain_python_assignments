@@ -1,10 +1,10 @@
-def most_frequent(str1):
-    dict = {}
-    for n in str1:
-        keys = dict.keys()
-        if n in keys:
-            dict[n] += 1
+def most_frequent(string):
+    d = dict()
+    for key in string:
+        if key not in d:
+            d[key] = 1
         else:
-            dict[n] = 1
-    return dict
-print(most_frequent('mycaptain.com'))
+            d[key] += 1
+    return d
+
+print (most_frequent('mycaptain'))
